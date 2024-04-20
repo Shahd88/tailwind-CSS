@@ -10,10 +10,99 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+
+    <div class="container box-border">
+        <nav class=" flex justify-between ml-auto mr-auto pt-10 pb-10">
+            <img src="images/logo (1).svg" alt="">
+            <div class="icon w-12 h-12 relative"><i class="fa-solid fa-bars-staggered "></i></div>
+            <ul class="flex justify-between items-center list-none">
+                <li class="">Home</li>
+                <li>New</li>
+                <li>Popular</li>
+                <li>Trending</li>
+                <li>Catagories</li>
+            </ul>
+            <div class="exit"><i class="fa-solid fa-xmark text-2xl"></i></div>
+        </nav>
+        <div class="all">
+            <div class="main grid grid-cols-3 gap-5">
+                <div class="first grid col-span-2">
+                    <div class="image w-full">
+                        <img src="images/image-web-3-desktop.jpg">
+                    </div>
+                    <div class="text grid grid-cols-2 gap-x-12">
+                        <h1 class="row-span-2 text-center  text-6xl tracking-normal font-extrabold 
+                        mt-5">
+                            The Bright Future Of Web 3.0?
+                        </h1>
+                        <div class="text2">
+                            <p class="text-slate-500 pb-12 pt-9 leading-6">
+                                We dive into the next evolution of the web that claims to put the power of the platforms
+                                back into
+                                the hands of the
+                                people. But is it really fulfilling its promise?
+                            </p>
+                            <button class=""> READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second bg-slate-950 p-8">
+                    <div class="two">
+                        <h1 class="text-amber-400 text-3xl pt pb-3 font-extrabold">New</h1>
+                        <h2 class="text-white font-bold  text-xl pt-5">Hydrogen VS Electric Cars</h2>
+                        <p class="text-zinc-400 pt-4">Will Hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <div class="two">
+                        <h2 class="text-white font-bold  text-xl pt-5">The Downsides of Al Artistry</h2>
+                        <p class="text-zinc-400 pt-4">What are the possible adverse effects of on-demand Al image
+                            generation?</p>
+                    </div>
+                    <div class="two">
+                        <h2 class="text-white font-bold  text-xl pt-5">Hydrogen VS Electric Cars</h2>
+                        <p class="text-zinc-400 pt-4">Will Hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catagories grid grid-cols-3 gap-7 pt-12">
+                <div class="cati grid grid-cols-3 gap-4 ">
+                    <div class="image w-full">
+                        <img src="images/image-retro-pcs.jpg" alt="">
+                    </div>
+                    <div class="cat-text col-span-2 ">
+                        <span class="text-gray-300 font-bold text-3xl">01</span>
+                        <h2 class="font-bold  text-xl pt-4 ">Reviving Retro PCs</h2>
+                        <p class="text-slate-500 pt-2">What happened when old PCs are given upgrades?</p>
+                    </div>
+                </div>
+                <div class="cati  grid grid-cols-3 gap-4 ">
+                    <div class="image  w-full">
+                        <img src="images/image-top-laptops.jpg" alt="">
+                    </div>
+                    <div class="cat-text col-span-2">
+                        <span class="text-gray-300 font-bold text-3xl">02</span>
+                        <h2 class="font-bold  text-xl pt-4 ">Top 10 Laptops Of 2022</h2>
+                        <p class="text-slate-500 pt-2">Our best picks for various needs and budgets</p>
+                    </div>
+                </div>
+                <div class="cati  grid grid-cols-3 gap-4 ">
+                    <div class="image w-full">
+                        <img src="images/image-gaming-growth.jpg" alt="" class="object-cover">
+                    </div>
+                    <div class="cat-text col-span-2">
+                        <span class="text-gray-300 font-bold text-3xl">03</span>
+                        <h2 class="font-bold  text-xl pt-4 ">The Growth Of Gaming</h2>
+                        <p class="text-slate-500 pt-2">How the pandemic has sparked fresh opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

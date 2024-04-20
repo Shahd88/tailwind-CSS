@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    padding: 4% 12%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li {
+    color: #5f5f5f;
+    margin-right: 30px;
+    position: relative;
+
+}
+
+nav ul li:hover {
+    color: hsl(5, 85%, 63%);
+    font-weight: bold;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+}
+
+nav .icon i {
+    font-size: 26px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 46%;
+
+}
+
+.first .text2 button {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    letter-spacing: 4px;
+    font-weight: bold;
+
+}
+
+.main h1 {
+    line-height: 1.1;
+}
+
+.two:not(:last-child)::after {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #A1A1AA;
+    margin: 23px 0 0;
+}
+
+.exit {
+    display: none;
+}
+
+@media (max-width : 768px) {
+
+    .container .all,
+    .container .main,
+    .container .catagories,
+    .container .main .text {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container nav ul {
+        display: none;
+        padding: 4% 6%;
+    }
+
+    .container nav ul li {
+        width: 100%;
+        padding: 20px 10px;
+        color: #5f5f5f;
+        font-size: 20px;
+    }
+
+    .main .text h1 {
+        text-align: start;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    nav .icon:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70vw;
+        height: 100%;
+        background-color: white;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transition: .3s;
+        padding-top: 10%;
+        z-index: 9999;
+        box-shadow: -70px 10px 100px rgba(88, 88, 88, 0.411);
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+
+    nav .icon:hover~.exit {
+        display: flex;
+    }
+}
+
+@media (min-width : 768px) {
+
+    .container nav .icon,
+    .container nav .exit {
+        display: none;
+    }
+}
